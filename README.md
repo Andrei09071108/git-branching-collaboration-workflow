@@ -1,5 +1,7 @@
 # Git Branching & Collaboration Workflow
 
-Independent AI-assisted portfolio demonstration. A fictional support team needs two changes to its active-ticket count. Separate local clones simulate parallel contributions by one author. One feature counts tickets waiting for a reply. The other counts tickets reopened after closure.
+Independent, AI-assisted single-author portfolio demonstration. A fictional support queue needed two concurrent changes. Separate feature branches proposed counting waiting and reopened tickets, respectively. Both pull requests were opened before either was integrated.
 
-Start with [setup](docs/setup.md). Follow the [collaboration workflow](docs/collaboration-workflow.md) and inspect the [conflict decision](docs/conflict-resolution.md). The release candidate keeps both proposals open for future GitHub pull requests. The audit bundle also carries the locally integrated rehearsal.
+[PR #1](https://github.com/Andrei09071108/git-branching-collaboration-workflow/pull/1) and [PR #2](https://github.com/Andrei09071108/git-branching-collaboration-workflow/pull/2) were integrated through merge commits. Updating the second feature with main produced a conflict in the active-status rule. The resolution retains open, waiting and reopened and excludes closed. Three regression tests cover the resulting behaviour.
+
+Follow the [setup guide](docs/setup.md) to run the tests. See the [collaboration workflow](docs/collaboration-workflow.md), [conflict decision](docs/conflict-resolution.md) and [acceptance record](docs/acceptance-checklist.md) for the review and handover.

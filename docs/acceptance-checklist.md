@@ -1,10 +1,10 @@
-# Acceptance criteria
+# Integration acceptance
 
-- Both features descend independently from the baseline.
-- Integrating the second feature after the first produces an unmerged source file.
-- The resolution includes open, waiting and reopened, while closed stays excluded.
-- Both feature tips are ancestors of the rehearsal result.
-- The baseline stays available on main for hosted review.
-- A fresh clone of the bundle reproduces the tests and the conflict.
+- Both proposals were open before integration: [PR #1](https://github.com/Andrei09071108/git-branching-collaboration-workflow/pull/1) and [PR #2](https://github.com/Andrei09071108/git-branching-collaboration-workflow/pull/2).
+- The waiting change passed two tests before its merge.
+- GitHub reported the second PR as conflicting. A local merge of origin/main into the reopened branch confirmed an unresolved queue_summary.py.
+- Inspection of the base and both sides identified the two additions. The resolution retained all three active states and all three regression tests passed.
+- After both PR merges, source and tests matched the independently audited rehearsal.
+- Independent PR approval: N/A. This demonstration used single-author self-review and local tests.
 
-See the accompanying audit report for observed local results. Hosted PRs, independent audit and remote acceptance are pending.
+Use the [setup guide](setup.md) to repeat the final checks.

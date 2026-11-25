@@ -1,3 +1,6 @@
 # Change history
 
-The baseline counts open tickets. Independent proposals add waiting and reopened with separate regression tests. The private rehearsal combines both changes; main remains at the baseline pending hosted review.
+- Baseline: counted open tickets; introduced the branch workflow and review guide.
+- [Waiting tickets](https://github.com/Andrei09071108/git-branching-collaboration-workflow/pull/1): extended the rule and added a regression test.
+- [Reopened tickets](https://github.com/Andrei09071108/git-branching-collaboration-workflow/pull/2): preserved the waiting rule while integrating reopened tickets through a conflict resolution.
+- Handover: recorded both hosted integrations and added public clone instructions.
